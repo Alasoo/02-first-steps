@@ -8,10 +8,10 @@ import style from './ItemCounter.module.css'
 
 interface Props {
     name: string;
-    quantity: number;
+    quantity?: number;
 }
 
-export const ItemCounter = ({ name, quantity }: Props) => {
+export const ItemCounter = ({ name, quantity = 5 }: Props) => {
     const [count, setCount] = useState(quantity);
 
     const handleAddClick = () => {
@@ -40,13 +40,13 @@ export const ItemCounter = ({ name, quantity }: Props) => {
         >
             <p
                 className={style.itemText}
-                style = {
+                style={
                     {
                         color: count === 0 ? 'red' : 'black'
                     }
                 }
-                //className={count === 0 ? style.red : style.black}
-                
+            //className={count === 0 ? style.red : style.black}
+
             >{name}</p>
             <button onClick={handleAddClick}>+1</button>
             <span>{count}</span>

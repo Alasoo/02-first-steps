@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > should match with the snapshot 1`] = `
+<div>
+  <h1>
+    David
+  </h1>
+  <h3>
+    Sánchez
+  </h3>
+  <p>
+    The Legend of Zelda, Final Fantasy, Metal Gear
+  </p>
+  <h1>
+    Activo
+  </h1>
+  <p>
+    {"zipCode":"Calle falsa 123","country":"España"}
+  </p>
+  <p
+    style="background-color: blue; border-radius: 20px; padding: 20px;"
+  />
+  <p
+    style="background-color: red; border-radius: 20px; padding: 20px;"
+  />
+</div>
+`;
