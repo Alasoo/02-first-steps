@@ -1,0 +1,10 @@
+.item-row {
+    display: 'flex';
+    align-Items: 'center';
+    gap: '1rem';
+    margin-Top: '10px';
+}
+
+.item-text{
+    font-weight: 900;
+}
